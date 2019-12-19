@@ -6,7 +6,7 @@ node {
 
     stage('Publishing gem') {
         sh("env")
-        sh("gem build ${REPOSITORY}.gemspec")
-        sh("gem inabox ${REPOSITORY}-${version}.gem -g http://${GEM_SERVER}:${GEM_SERVER_PORT}")
+        sh("gem build ${JOB_NAME}.gemspec")
+        sh("gem inabox ${JOB_NAME}-${GEM_VERSION}.gem -g http://${GEM_SERVER}:${GEM_SERVER_PORT}")
     }
 }

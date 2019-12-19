@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'mondo_logger'
-  s.version     = '0.0.0'
+  s.version     = "#{GEM_VERSION}.#{BUILD_ID}"
   s.date        = '2019-12-19'
   s.summary     = "Logging functionality!"
   s.description = "A simple logger class"

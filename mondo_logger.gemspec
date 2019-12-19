@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.summary     = "Logging functionality!"
   s.description = "A simple logger class"
   s.authors     = ["Mondoshivan"]
-  s.email       = 'mondoshivan@me.com'
+  s.email       = "#{ENV['EMAIL']}"
   s.files       = ["lib/mondo_logger.rb"]
   s.homepage    =
     'https://github.com/mondoshivan/mondo_logger.git'

@@ -1,7 +1,9 @@
+require 'date'
+
 Gem::Specification.new do |s|
   s.name        = 'mondo_logger'
-  s.version     = "#{GEM_VERSION}.#{BUILD_ID}"
-  s.date        = '2019-12-19'
+  s.version     = "#{ENV['GEM_VERSION']}.#{ENV['BUILD_ID']}"
+  s.date        = DateTime.now.strftime("%Y-%d-%m")
   s.summary     = "Logging functionality!"
   s.description = "A simple logger class"
   s.authors     = ["Mondoshivan"]

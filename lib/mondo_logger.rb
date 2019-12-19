@@ -1,4 +1,4 @@
-
+require 'mondo_logger/test'
 
 class Log
   

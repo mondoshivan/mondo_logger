@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = "A simple logger class"
   s.authors     = ["Mondoshivan"]
   s.email       = "#{ENV['EMAIL']}"
-  s.files       = ["lib/mondo_logger.rb"]
+  s.files       = Dir['**/*.rb']
   s.homepage    =
     'https://github.com/mondoshivan/mondo_logger.git'
   s.license       = 'MIT'

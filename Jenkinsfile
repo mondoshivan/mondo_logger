@@ -3,6 +3,10 @@ node {
     stage('Clone repository') {
         checkout scm
     }
+    
+    stage('Running tests') {
+        sh("./spec_handler.rb")
+    }
 
     stage('Building gem') {
         sh("gem build ${GEM_NAME}.gemspec")

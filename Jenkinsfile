@@ -1,18 +1,18 @@
 node {
     
-    stage('Clone repository') {
+    stage('Cloning') {
         checkout scm
     }
     
-    stage('Running tests') {
+    stage('Testing') {
         sh("./spec_handler.rb")
     }
 
-    stage('Building gem') {
+    stage('Building') {
         sh("gem build ${GEM_NAME}.gemspec")
     }
     
-    stage('Publishing gem') {
+    stage('Publishing') {
         sh("gem inabox ${GEM_NAME}-${GEM_VERSION}.${BUILD_ID}.gem -g http://${GEM_SERVER}:${GEM_SERVER_PORT}")
     }
 }

@@ -1,7 +1,7 @@
 require 'date'
 
 Gem::Specification.new do |s|
-  s.name        = 'mondo_logger'
+  s.name        = "#{ENV['GEM_NAME']}"
   s.version     = "#{ENV['GEM_VERSION']}.#{ENV['BUILD_ID']}"
   s.date        = "#{DateTime.now.strftime("%Y-%m-%d")}"
   s.summary     = "Logging functionality!"

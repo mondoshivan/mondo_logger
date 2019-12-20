@@ -1,9 +1,10 @@
 require 'mondo_logger'
 
-describe do
-  context "wide" do
-    it "works" do
-      expect{Log.debug('hello')}.to_not raise_error(RuntimeError)
+describe Log do
+  context "level setting" do
+    it "is set" do
+      Log.level = 'warn'
+      expect(Log.level).to eq Logger::WARN
     end
   end
 end

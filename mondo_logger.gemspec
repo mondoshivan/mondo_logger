@@ -4,12 +4,11 @@ Gem::Specification.new do |s|
   s.name        = "#{ENV['GEM_NAME']}"
   s.version     = "#{ENV['GEM_VERSION']}.#{ENV['BUILD_ID']}"
   s.date        = "#{DateTime.now.strftime("%Y-%m-%d")}"
-  s.summary     = "Logging functionality!"
-  s.description = "A simple logger class"
-  s.authors     = ["Mondoshivan"]
+  s.summary     = "#{ENV['GEM_SUMMARY']}"
+  s.description = "#{ENV['GEM_DESCRIPTION']}"
+  s.authors     = (ENV['GEM_AUTHORS'] || '').split(',').map{|a| a.strip}
   s.email       = "#{ENV['EMAIL']}"
   s.files       = Dir['lib/**/*.rb']
-  s.homepage    =
-    'https://github.com/mondoshivan/mondo_logger.git'
-  s.license       = 'MIT'
+  s.homepage    = "#{ENV['GEM_HOMEPAGE']}"
+  s.license     = "#{ENV['GEM_LICENSE']}"
 end
